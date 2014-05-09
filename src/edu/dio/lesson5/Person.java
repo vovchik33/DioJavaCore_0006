@@ -73,6 +73,16 @@ public class Person {
         private int age;
         private String mail;
 
+        public Builder() {
+        }
+
+        public Builder(Person person) {
+            this.firstName = person.firstName;
+            this.lastName = person.lastName;
+            this.age = person.age;
+            this.mail = person.mail;
+        }
+
         public Builder setFirstName(String firstName) {
             this.firstName = firstName;
             return this;
